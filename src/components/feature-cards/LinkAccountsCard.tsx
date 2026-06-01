@@ -1,6 +1,5 @@
 import { Eye, ArrowUpRight, Plus } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import Icon from "@/components/ui/icon"
 
 const espFeatures = [
   { name: "Скелеты игроков", detail: "Сквозь стены · 300м", tag: "ESP-01", color: "bg-violet-700" },
@@ -28,7 +27,7 @@ export function LinkAccountsCard() {
           <div key={index} className="flex items-center justify-between rounded-lg bg-[#0f0f0f] px-3 py-2">
             <div className="flex items-center gap-3">
               <div className={`flex h-9 w-9 items-center justify-center rounded-lg ${item.color} bg-opacity-30`}>
-                <Icon name="Eye" size={16} className="text-white opacity-70" />
+                <Eye className="h-4 w-4 text-white opacity-70" />
               </div>
               <div>
                 <p className="text-sm font-medium text-white">{item.name}</p>
