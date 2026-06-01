@@ -5,27 +5,27 @@ export function Header() {
   return (
     <header className="flex items-center justify-between px-8 py-4">
       <div className="flex items-center gap-2">
-        <ФинПотокLogo />
+        <KomaruLogo />
         <span className="text-lg font-semibold text-white">
-          ФинПоток<sup className="text-xs">™</sup>
+          KomaruDLC
         </span>
       </div>
 
       <nav className="hidden md:flex items-center gap-8">
         <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
-          Продукты
+          Функции
         </a>
         <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors flex items-center gap-1">
-          Решения <ChevronDown className="h-4 w-4" />
+          Тарифы <ChevronDown className="h-4 w-4" />
         </a>
         <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
-          Ресурсы
+          Статус
         </a>
         <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
-          Тарифы
+          FAQ
         </a>
         <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
-          Контакты
+          Discord
         </a>
       </nav>
 
@@ -33,19 +33,18 @@ export function Header() {
         variant="outline"
         className="rounded-full border-violet-500 text-violet-400 hover:bg-violet-500/10 hover:text-violet-300 bg-transparent"
       >
-        Запросить демо
+        Купить доступ
       </Button>
     </header>
   )
 }
 
-function ФинПотокLogo() {
+function KomaruLogo() {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="8" cy="8" r="3" fill="#8B5CF6" />
-      <circle cx="16" cy="8" r="3" fill="#8B5CF6" opacity="0.6" />
-      <circle cx="8" cy="16" r="3" fill="#8B5CF6" opacity="0.6" />
-      <circle cx="16" cy="16" r="3" fill="#8B5CF6" opacity="0.4" />
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="14,2 26,9 26,19 14,26 2,19 2,9" fill="#8B5CF6" opacity="0.15" stroke="#8B5CF6" strokeWidth="1.5"/>
+      <polygon points="14,7 21,11 21,17 14,21 7,17 7,11" fill="#8B5CF6" opacity="0.4"/>
+      <circle cx="14" cy="14" r="3" fill="#a78bfa"/>
     </svg>
   )
 }
